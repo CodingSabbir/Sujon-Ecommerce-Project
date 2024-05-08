@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Your Title Here</title>
+  <style>
+    /* CSS code for applying the sans-serif font */
+    .font-sans-serif {
+      font-family: sans-serif;
+    }
+
+    /* News Tricker */
+    @-webkit-keyframes animateFirstList {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  50% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+
+  50.1% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  50.2% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  50.3% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes animateFirstList {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  50% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+
+  50.1% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  50.2% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  50.3% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes animateSecondList {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    opacity: 1;
+  }
+
+  50% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  99.7% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+
+  99.8% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  99.9% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    opacity: 1;
+  }
+}
+
+@keyframes animateSecondList {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    opacity: 1;
+  }
+
+  50% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  99.7% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+
+  99.8% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  99.9% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    opacity: 1;
+  }
+}
+
+.news-ticker-wrapper {
+  width: 1200px;
+}
+
+.news-data-strip {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 32px;
+ background: #F1F1F1;
+}
+.news-data-strip__play-pause-button {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 30px;
+  border-right: 1px solid #000;
+  cursor: pointer;
+}
+.news-data-strip__ticker-viewport {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 30px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.news-data-strip__ticker-viewport-inner {
+  position: absolute;
+  width: 10000px;
+  height: 32px;
+  display: table;
+}
+
+.news-data-strip__tickers-list-first {
+  list-style: none;
+  position: absolute;
+  display: inline-block;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  margin: 0;
+  padding: 0;
+}
+
+.news-data-strip__tickers-list-first.animate-tickers-left {
+  transition: 120s linear;
+  -webkit-animation: animateFirstList 120s linear;
+  animation: animateFirstList 120s linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.news-data-strip__tickers-list-second {
+  list-style: none;
+  position: absolute;
+  display: inline-block;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  margin: 0;
+  padding: 0;
+}
+
+.news-data-strip__tickers-list-second.animate-tickers-left {
+  transition: 120s linear;
+  -webkit-animation: animateSecondList 120s linear;
+  animation: animateSecondList 120s linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.news-data-strip__ticker {
+  display: inline-block;
+  line-height: 30px;
+  padding: 0 10px;
+  font-family: Helvetica Neue, Arial, sans-serif;
+  font-size: 12px;
+}
+
+.news-data-strip__ticker,
+.news-data-strip__ticker-link {
+  color: #000;
+  text-decoration: none;
+}
+
+.news-data-strip__ticker-link:active,
+.news-data-strip__ticker-link:hover {
+  cursor: pointer;
+}
+
+.news-data-strip__ticker--hidden {
+  display: none;
+}
+
+.news-data-strip__ticker-label {
+  display: inline;
+  font-weight: bold;
+  font-size: 16px;
+  
+}
+
+.news-data-strip__ticker-date {
+  display: inline;
+  margin-left: 10px;
+  font-style: italic;
+}
+
+.news-ticker-wrapper {
+  width: 100%; /* Set the initial width to 100% */
+  /* Set a maximum width */
+}
+
+/* Slider  */
+swiper-container {
+      width: 100%;
+      height: 100%;
+      /* background: #010E4F; */
+     
+    }
+
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      margin: 20px;
+      background: #181f45;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      
+    }
+
+/* text roted */
+@keyframes swing {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(15deg); }
+    100% { transform: rotate(0deg); }
+  }
+
+  /* Applying animation to the text */
+  .animated.swing {
+    display: inline-block;
+    animation: swing 1s infinite;
+  }
+  </style>
+</head>
+<body>
+  <!-- head section-->
+  <head>
+    <h2 class="bg-[#2C3494] p-2 text-white text-center font-bold sm:text-[19px] font-sans-serif">Innovating Sustainable Solutions For Boiler</h2>
+  </head>
+  <!-- header section -->
+  <div class="flex  justify-between items-center lg:px-10 p-4 bg-[#EDF0F2]">
+    <div >
+        <img class="lg:ml-10 w-28 sm:w-38 md:w-42 lg:w-44" src="/img/ABC-Circle-Logo-Icon-Text-150x150.png" alt="">
+    </div>
+    <div class="hidden sm:block">
+        <div class=" w-full h-auto py-8 flex  items-center justify-center sm:gap-3 lg:gap-4  xl:gap-8 flex-wrap">
+            <button class="w-10 h-10 flex items-center justify-center rounded-lg bg-white shadow-md shadow-gray-200 group transition-all duration-300">
+            <svg class="transition-all duration-300 group-hover:scale-110"
+            xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 72 72" fill="none">
+              <path d="M46.4927 38.6403L47.7973 30.3588H39.7611V24.9759C39.7611 22.7114 40.883 20.4987 44.4706 20.4987H48.1756V13.4465C46.018 13.1028 43.8378 12.9168 41.6527 12.8901C35.0385 12.8901 30.7204 16.8626 30.7204 24.0442V30.3588H23.3887V38.6403H30.7204V58.671H39.7611V38.6403H46.4927Z" fill="#337FFF"/>
+            </svg>
+            </button>
+            
+          
+            
+            <button class="w-10 h-10 flex items-center justify-center rounded-lg bg-white shadow-md shadow-gray-200 group transition-all duration-300">
+            <svg class="transition-all duration-300 group-hover:scale-110" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 71 72" fill="none">
+            <path d="M12.5762 56.8405L15.8608 44.6381C13.2118 39.8847 12.3702 34.3378 13.4904 29.0154C14.6106 23.693 17.6176 18.952 21.9594 15.6624C26.3012 12.3729 31.6867 10.7554 37.1276 11.1068C42.5685 11.4582 47.6999 13.755 51.5802 17.5756C55.4604 21.3962 57.8292 26.4844 58.2519 31.9065C58.6746 37.3286 57.1228 42.7208 53.8813 47.0938C50.6399 51.4668 45.9261 54.5271 40.605 55.7133C35.284 56.8994 29.7125 56.1318 24.9131 53.5513L12.5762 56.8405ZM25.508 48.985L26.2709 49.4365C29.7473 51.4918 33.8076 52.3423 37.8191 51.8555C41.8306 51.3687 45.5681 49.5719 48.4489 46.7452C51.3298 43.9185 53.1923 40.2206 53.7463 36.2279C54.3002 32.2351 53.5143 28.1717 51.5113 24.6709C49.5082 21.1701 46.4003 18.4285 42.6721 16.8734C38.9438 15.3184 34.8045 15.0372 30.8993 16.0736C26.994 17.11 23.5422 19.4059 21.0817 22.6035C18.6212 25.801 17.2903 29.7206 17.2963 33.7514C17.293 37.0937 18.2197 40.3712 19.9732 43.2192L20.4516 44.0061L18.6153 50.8167L25.508 48.985Z" fill="#00D95F"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M44.0259 36.8847C43.5787 36.5249 43.0549 36.2716 42.4947 36.1442C41.9344 36.0168 41.3524 36.0186 40.793 36.1495C39.9524 36.4977 39.4093 37.8134 38.8661 38.4713C38.7516 38.629 38.5833 38.7396 38.3928 38.7823C38.2024 38.8251 38.0028 38.797 37.8316 38.7034C34.7543 37.5012 32.1748 35.2965 30.5122 32.4475C30.3704 32.2697 30.3033 32.044 30.325 31.8178C30.3467 31.5916 30.4555 31.3827 30.6286 31.235C31.2344 30.6368 31.6791 29.8959 31.9218 29.0809C31.9756 28.1818 31.7691 27.2863 31.3269 26.5011C30.985 25.4002 30.3344 24.42 29.4518 23.6762C28.9966 23.472 28.4919 23.4036 27.9985 23.4791C27.5052 23.5546 27.0443 23.7709 26.6715 24.1019C26.0242 24.6589 25.5104 25.3537 25.168 26.135C24.8256 26.9163 24.6632 27.7643 24.6929 28.6165C24.6949 29.0951 24.7557 29.5716 24.8739 30.0354C25.1742 31.1497 25.636 32.2144 26.2447 33.1956C26.6839 33.9473 27.163 34.6749 27.6801 35.3755C29.3607 37.6767 31.4732 39.6305 33.9003 41.1284C35.1183 41.8897 36.42 42.5086 37.7799 42.973C39.1924 43.6117 40.752 43.8568 42.2931 43.6824C43.1711 43.5499 44.003 43.2041 44.7156 42.6755C45.4281 42.1469 45.9995 41.4518 46.3795 40.6512C46.6028 40.1675 46.6705 39.6269 46.5735 39.1033C46.3407 38.0327 44.9053 37.4007 44.0259 36.8847Z" fill="#00D95F"/>
+            </svg>
+            </button>
+            
+         
+            
+            <button class="w-10 h-10 flex items-center justify-center rounded-lg bg-white shadow-md shadow-gray-200 group transition-all duration-300">
+            <svg class="rounded-md transition-all duration-300 group-hover:scale-110" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 72 72" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6975 11C12.6561 11 11 12.6057 11 14.5838V57.4474C11 59.4257 12.6563 61.03 14.6975 61.03H57.3325C59.3747 61.03 61.03 59.4255 61.03 57.4468V14.5838C61.03 12.6057 59.3747 11 57.3325 11H14.6975ZM26.2032 30.345V52.8686H18.7167V30.345H26.2032ZM26.6967 23.3793C26.6967 25.5407 25.0717 27.2703 22.4615 27.2703L22.4609 27.2701H22.4124C19.8998 27.2701 18.2754 25.5405 18.2754 23.3791C18.2754 21.1686 19.9489 19.4873 22.5111 19.4873C25.0717 19.4873 26.6478 21.1686 26.6967 23.3793ZM37.833 52.8686H30.3471L30.3469 52.8694C30.3469 52.8694 30.4452 32.4588 30.3475 30.3458H37.8336V33.5339C38.8288 31.9995 40.6098 29.8169 44.5808 29.8169C49.5062 29.8169 53.1991 33.0363 53.1991 39.9543V52.8686H45.7133V40.8204C45.7133 37.7922 44.6293 35.7269 41.921 35.7269C39.8524 35.7269 38.6206 37.1198 38.0796 38.4653C37.8819 38.9455 37.833 39.6195 37.833 40.2918V52.8686Z" fill="#006699"/>
+            </svg>
+            </button>
+            
+          
+            
+            <button class="w-10 h-10 flex items-center justify-center rounded-lg bg-white shadow-md shadow-gray-200 group transition-all duration-300">
+            <svg class="rounded-md transition-all duration-300 group-hover:scale-110" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 72 72" fill="none">
+            <path d="M45.8956 26.0879C46.8845 26.0879 47.8503 26.1701 48.8032 26.2876C47.0805 18.7224 39.1346 13 29.5799 13C18.7651 13 10 20.3257 10 29.3599C10 34.5686 12.9306 39.1897 17.4761 42.1798L14.8948 47.3562L21.9268 44.336C23.4347 44.873 25.0016 45.3152 26.6753 45.521C26.4465 44.5226 26.3166 43.4991 26.3166 42.4487C26.3166 33.4273 35.0976 26.0879 45.8956 26.0879ZM36.1064 20.3615C37.4577 20.3615 38.5536 21.4608 38.5536 22.8158C38.5536 24.1713 37.4578 25.2698 36.1064 25.2698C34.7543 25.2698 33.6589 24.1713 33.6589 22.8158C33.6589 21.4607 34.7543 20.3615 36.1064 20.3615ZM23.0531 25.2698C21.7016 25.2698 20.6057 24.1713 20.6057 22.8158C20.6057 21.4608 21.7017 20.3615 23.0531 20.3615C24.4045 20.3615 25.5006 21.4608 25.5006 22.8158C25.5005 24.1713 24.4044 25.2698 23.0531 25.2698Z" fill="#51C332"/>
+            <path d="M62.2121 42.4484C62.2121 35.22 54.9051 29.3599 45.8956 29.3599C36.8858 29.3599 29.5799 35.22 29.5799 42.4484C29.5799 49.6763 36.8858 55.5365 45.8956 55.5365C47.3773 55.5365 48.7867 55.3271 50.1542 55.0297L58.9489 58.8084L55.9072 52.713C59.7191 50.3174 62.2121 46.6335 62.2121 42.4484ZM41.001 41.6303C39.6496 41.6303 38.5534 40.5314 38.5534 39.1757C38.5534 37.8207 39.6495 36.7222 41.001 36.7222C42.3528 36.7222 43.4482 37.8212 43.4482 39.1757C43.4482 40.5316 42.3526 41.6303 41.001 41.6303ZM50.7905 41.6303C49.4385 41.6303 48.3433 40.5314 48.3433 39.1757C48.3433 37.8207 49.4384 36.7222 50.7905 36.7222C52.1425 36.7222 53.238 37.8212 53.238 39.1757C53.238 40.5316 52.1425 41.6303 50.7905 41.6303Z" fill="#51C332"/>
+            </svg>
+            </button>
+            
+         
+            
+            <button class="w-10 h-10 flex items-center justify-center rounded-lg bg-white shadow-md shadow-gray-200 group transition-all duration-300">
+                <svg class="rounded-md transition-all duration-300 group-hover:scale-110" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="328 355 335 276" fill="none">
+                <path d="M 630, 425
+                A 195, 195 0 0 1 331, 600
+                A 142, 142 0 0 0 428, 570
+                A  70,  70 0 0 1 370, 523
+                A  70,  70 0 0 0 401, 521
+                A  70,  70 0 0 1 344, 455
+                A  70,  70 0 0 0 372, 460
+                A  70,  70 0 0 1 354, 370
+                A 195, 195 0 0 0 495, 442
+                A  67,  67 0 0 1 611, 380
+                A 117, 117 0 0 0 654, 363
+                A  65,  65 0 0 1 623, 401
+                A 117, 117 0 0 0 662, 390
+                A  65,  65 0 0 1 630, 425
+                Z" fill="#3BA9EE"/>
+                <path d="M30.8811 44.1617L44.4392 36.3124L30.8811 28.463V44.1617Z" fill="white"/>
+                </svg>
+                </button>
+            
+            <button class="w-10 h-10 flex items-center justify-center rounded-lg bg-white shadow-md shadow-gray-200 group transition-all duration-300">
+            <svg class="rounded-md transition-all duration-300 group-hover:scale-110" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 72 72" fill="none">
+            <path d="M61.1026 23.7185C60.5048 21.471 58.7363 19.6981 56.4863 19.0904C52.4181 18 36.0951 18 36.0951 18C36.0951 18 19.7805 18 15.7039 19.0904C13.4622 19.6897 11.6937 21.4627 11.0876 23.7185C10 27.7971 10 36.3124 10 36.3124C10 36.3124 10 44.8276 11.0876 48.9063C11.6854 51.1537 13.4539 52.9267 15.7039 53.5343C19.7805 54.6247 36.0951 54.6247 36.0951 54.6247C36.0951 54.6247 52.4181 54.6247 56.4863 53.5343C58.728 52.935 60.4965 51.162 61.1026 48.9063C62.1902 44.8276 62.1902 36.3124 62.1902 36.3124C62.1902 36.3124 62.1902 27.7971 61.1026 23.7185Z" fill="#FF3000"/>
+            <path d="M30.8811 44.1617L44.4392 36.3124L30.8811 28.463V44.1617Z" fill="white"/>
+            </svg>
+            </button>
+
+            </div>
+                                
+    </div>
+    <div class="flex justify-between gap-5 sm:gap-10">
+        <img class=" w-24 sm:w-24 lg:w-32 xl:w-48" src="/img/kisspng-emergency-service-ambulance-plumbing-emergency-service-5b1e06c51137b8.1793637815286944690705-300x135.png" alt="">
+        <img class="w-20 sm:w-20 lg:w-28 xl:w-44" src="/img/01713-223000.png" alt="">
+    </div>
+    
+  </div>
+
+  <!-- navbar items -->
+  <nav class='flex border-b-4 border-t-4 border-[#2C3494] bg-[#D20009] font-sans min-h-[70px] tracking-wide relative z-50'>
+    <div class='flex flex-wrap items-center justify-center px-10 py-3 gap-4 w-full'>
+     
+  
+      <div id="collapseMenu"
+        class='max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50'>
+        <button id="toggleClose" class='lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white p-3'>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-black" viewBox="0 0 320.591 320.591">
+            <path
+              d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+              data-original="#000000"></path>
+            <path
+              d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+              data-original="#000000"></path>
+          </svg>
+        </button>
+  
+        <ul
+          class='lg:flex lg:gap-x-10 max-lg:space-y-3 max-lg:fixed max-lg:bg-[#D20009] max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50'>
+         
+          <li class='max-lg:border-b max-lg:py-3'><a href='javascript:void(0)'
+              class=' text-[15px] font-bold text-white  block'>HOME</a></li>
+          <li class='group max-lg:border-b max-lg:py-3 relative'>
+            <a href='javascript:void(0)'
+              class=' text-[15px] font-bold text-white  block'>PRODUCT<svg
+                xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-1 inline-block"
+                viewBox="0 0 24 24">
+                <path
+                  d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
+                  data-name="16" data-original="#000000" />
+              </svg>
+            </a>
+            <ul
+              class='absolute shadow-lg bg-[#D20009] space-y-3 lg:top-5 max-lg:top-8 -left-6 min-w-[250px] z-50 max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-[700px] px-6 group-hover:pb-4 group-hover:pt-6 transition-all duration-500'>
+              <li class='border-b py-2 '><a href='javascript:void(0)'
+                  class='text-white  text-[15px] font-bold block'>PRODUCT</a></li>
+              <li class='border-b py-2 '><a href='javascript:void(0)'
+                  class='text-white font-bold block'>ABOUT</a></li>
+              <li class='border-b py-2 '><a href='javascript:void(0)'
+                  class='text-white font-bold block'>OUR SERVICE</a></li>
+              <li class='border-b py-2 '><a href='javascript:void(0)'
+                  class='text-white font-bold block'>SIGN UP</a></li>
+              <li class='border-b py-2 '><a href='javascript:void(0)'
+                  class='text-white font-bold block'>PROJECT</a></li>
+                <li class='border-b py-2 '><a href='javascript:void(0)'
+                    class='text-white font-bold block'>GALLERY</a></li>
+                <li class='border-b py-2 '><a href='javascript:void(0)'
+                class='text-white font-bold block'>CONTACT</a></li>
+                <li class='border-b py-2 '><a href='javascript:void(0)'
+                    class='text-white font-bold block'>GET BOILER PRICE</a></li>
+            </ul>
+          </li>
+        
+          <li class='max-lg:border-b max-lg:py-3'><a href='javascript:void(0)'
+              class='text-white text-[15px] font-bold block'>ABOUT </a></li>
+              <li class='group max-lg:border-b max-lg:py-3 relative'>
+                <a href='javascript:void(0)'
+                  class='  text-[15px] font-bold text-white block'>OUR SERVICE<svg
+                    xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-1 inline-block"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
+                      data-name="16" data-original="#000000" />
+                  </svg>
+                </a>
+                <ul
+                  class='absolute shadow-lg bg-[#D20009] space-y-3 lg:top-5 max-lg:top-8 -left-6 min-w-[250px] z-50 max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-[700px] px-6 group-hover:pb-4 group-hover:pt-6 transition-all duration-500'>
+                  <li class='border-b py-2 '><a href='javascript:void(0)'
+                      class='text-white font-bold block'>Foods</a></li>
+               
+                </ul>
+              </li>
+          <li class='max-lg:border-b max-lg:py-3'><a href='javascript:void(0)'
+              class='text-white text-[15px] font-bold block'>PROJECT</a></li>
+              <li class='group max-lg:border-b max-lg:py-3 relative'>
+                <a href='javascript:void(0)'
+                  class=' text-[15px] font-bold text-white  block'>GALLERY<svg
+                    xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-1 inline-block"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
+                      data-name="16" data-original="#000000" />
+                  </svg>
+                </a>
+                <ul
+                  class='absolute shadow-lg bg-[#D20009] space-y-3 lg:top-5 max-lg:top-8 -left-6 min-w-[250px] z-50 max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-[700px] px-6 group-hover:pb-4 group-hover:pt-6 transition-all duration-500'>
+                  <li class='border-b py-2 '><a href='javascript:void(0)'
+                      class='text-white  text-[15px] font-bold block'>PRODUCT</a></li>
+                  <li class='border-b py-2 '><a href='javascript:void(0)'
+                      class='text-white font-bold block'>ABOUT</a></li>
+                  <li class='border-b py-2 '><a href='javascript:void(0)'
+                      class='text-white font-bold block'>OUR SERVICE</a></li>
+                  <li class='border-b py-2 '><a href='javascript:void(0)'
+                      class='text-white font-bold block'>SIGN UP</a></li>
+                  <li class='border-b py-2 '><a href='javascript:void(0)'
+                      class='text-white font-bold block'>PROJECT</a></li>
+                </ul>
+              </li>
+              <li class='group max-lg:border-b max-lg:py-3 relative'>
+                <a href='javascript:void(0)'
+                  class=' text-[15px] font-bold text-white  block'>CONTACT<svg
+                    xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-1 inline-block"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
+                      data-name="16" data-original="#000000" />
+                  </svg>
+                </a>
+                <ul
+                  class='absolute shadow-lg bg-[#D20009] space-y-3 lg:top-5 max-lg:top-8 -left-6 min-w-[250px] z-50 max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-[700px] px-6 group-hover:pb-4 group-hover:pt-6 transition-all duration-500'>
+                  <li class='border-b py-2 '><a href='javascript:void(0)'
+                      class='text-white  text-[15px] font-bold block'>PRODUCT</a></li>
+                  <li class='border-b py-2 '><a href='javascript:void(0)'
+                      class='text-white font-bold block'>ABOUT</a></li>
+                  <li class='border-b py-2 '><a href='javascript:void(0)'
+                      class='text-white font-bold block'>OUR SERVICE</a></li>
+                  <li class='border-b py-2 '><a href='javascript:void(0)'
+                      class='text-white font-bold block'>SIGN UP</a></li>
+                  <li class='border-b py-2 '><a href='javascript:void(0)'
+                      class='text-white font-bold block'>PROJECT</a></li>
+                </ul>
+              </li>
+            <li class='max-lg:border-b max-lg:py-3'><a href='javascript:void(0)'
+                    class='text-white text-[15px] font-bold block'>GET BOILER PRICE</a></li>
+        </ul>
+      </div>
+  
+      <div class='flex items-center space-x-8 max-lg:ml-auto'>
+      
+  
+        <div class="block sm:hidden">
+            <div class=" w-full h-auto  flex  items-center justify-center gap-1.5 sm:gap-3 lg:gap-4  xl:gap-8 ">
+                <button class="w-10 h-10 flex items-center justify-center rounded-lg bg-white shadow-md shadow-gray-200 group transition-all duration-300">
+                <svg class="transition-all duration-300 group-hover:scale-110"
+                xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 72 72" fill="none">
+                  <path d="M46.4927 38.6403L47.7973 30.3588H39.7611V24.9759C39.7611 22.7114 40.883 20.4987 44.4706 20.4987H48.1756V13.4465C46.018 13.1028 43.8378 12.9168 41.6527 12.8901C35.0385 12.8901 30.7204 16.8626 30.7204 24.0442V30.3588H23.3887V38.6403H30.7204V58.671H39.7611V38.6403H46.4927Z" fill="#337FFF"/>
+                </svg>
+                </button>
+                
+              
+                
+                <button class="w-10 h-10 flex items-center justify-center rounded-lg bg-white shadow-md shadow-gray-200 group transition-all duration-300">
+                <svg class="transition-all duration-300 group-hover:scale-110" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 71 72" fill="none">
+                <path d="M12.5762 56.8405L15.8608 44.6381C13.2118 39.8847 12.3702 34.3378 13.4904 29.0154C14.6106 23.693 17.6176 18.952 21.9594 15.6624C26.3012 12.3729 31.6867 10.7554 37.1276 11.1068C42.5685 11.4582 47.6999 13.755 51.5802 17.5756C55.4604 21.3962 57.8292 26.4844 58.2519 31.9065C58.6746 37.3286 57.1228 42.7208 53.8813 47.0938C50.6399 51.4668 45.9261 54.5271 40.605 55.7133C35.284 56.8994 29.7125 56.1318 24.9131 53.5513L12.5762 56.8405ZM25.508 48.985L26.2709 49.4365C29.7473 51.4918 33.8076 52.3423 37.8191 51.8555C41.8306 51.3687 45.5681 49.5719 48.4489 46.7452C51.3298 43.9185 53.1923 40.2206 53.7463 36.2279C54.3002 32.2351 53.5143 28.1717 51.5113 24.6709C49.5082 21.1701 46.4003 18.4285 42.6721 16.8734C38.9438 15.3184 34.8045 15.0372 30.8993 16.0736C26.994 17.11 23.5422 19.4059 21.0817 22.6035C18.6212 25.801 17.2903 29.7206 17.2963 33.7514C17.293 37.0937 18.2197 40.3712 19.9732 43.2192L20.4516 44.0061L18.6153 50.8167L25.508 48.985Z" fill="#00D95F"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M44.0259 36.8847C43.5787 36.5249 43.0549 36.2716 42.4947 36.1442C41.9344 36.0168 41.3524 36.0186 40.793 36.1495C39.9524 36.4977 39.4093 37.8134 38.8661 38.4713C38.7516 38.629 38.5833 38.7396 38.3928 38.7823C38.2024 38.8251 38.0028 38.797 37.8316 38.7034C34.7543 37.5012 32.1748 35.2965 30.5122 32.4475C30.3704 32.2697 30.3033 32.044 30.325 31.8178C30.3467 31.5916 30.4555 31.3827 30.6286 31.235C31.2344 30.6368 31.6791 29.8959 31.9218 29.0809C31.9756 28.1818 31.7691 27.2863 31.3269 26.5011C30.985 25.4002 30.3344 24.42 29.4518 23.6762C28.9966 23.472 28.4919 23.4036 27.9985 23.4791C27.5052 23.5546 27.0443 23.7709 26.6715 24.1019C26.0242 24.6589 25.5104 25.3537 25.168 26.135C24.8256 26.9163 24.6632 27.7643 24.6929 28.6165C24.6949 29.0951 24.7557 29.5716 24.8739 30.0354C25.1742 31.1497 25.636 32.2144 26.2447 33.1956C26.6839 33.9473 27.163 34.6749 27.6801 35.3755C29.3607 37.6767 31.4732 39.6305 33.9003 41.1284C35.1183 41.8897 36.42 42.5086 37.7799 42.973C39.1924 43.6117 40.752 43.8568 42.2931 43.6824C43.1711 43.5499 44.003 43.2041 44.7156 42.6755C45.4281 42.1469 45.9995 41.4518 46.3795 40.6512C46.6028 40.1675 46.6705 39.6269 46.5735 39.1033C46.3407 38.0327 44.9053 37.4007 44.0259 36.8847Z" fill="#00D95F"/>
+                </svg>
+                </button>
+                
+             
+                
+                <button class="w-10 h-10 flex items-center justify-center rounded-lg bg-white shadow-md shadow-gray-200 group transition-all duration-300">
+                <svg class="rounded-md transition-all duration-300 group-hover:scale-110" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 72 72" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6975 11C12.6561 11 11 12.6057 11 14.5838V57.4474C11 59.4257 12.6563 61.03 14.6975 61.03H57.3325C59.3747 61.03 61.03 59.4255 61.03 57.4468V14.5838C61.03 12.6057 59.3747 11 57.3325 11H14.6975ZM26.2032 30.345V52.8686H18.7167V30.345H26.2032ZM26.6967 23.3793C26.6967 25.5407 25.0717 27.2703 22.4615 27.2703L22.4609 27.2701H22.4124C19.8998 27.2701 18.2754 25.5405 18.2754 23.3791C18.2754 21.1686 19.9489 19.4873 22.5111 19.4873C25.0717 19.4873 26.6478 21.1686 26.6967 23.3793ZM37.833 52.8686H30.3471L30.3469 52.8694C30.3469 52.8694 30.4452 32.4588 30.3475 30.3458H37.8336V33.5339C38.8288 31.9995 40.6098 29.8169 44.5808 29.8169C49.5062 29.8169 53.1991 33.0363 53.1991 39.9543V52.8686H45.7133V40.8204C45.7133 37.7922 44.6293 35.7269 41.921 35.7269C39.8524 35.7269 38.6206 37.1198 38.0796 38.4653C37.8819 38.9455 37.833 39.6195 37.833 40.2918V52.8686Z" fill="#006699"/>
+                </svg>
+                </button>
+                
+              
+                
+                <button class="w-10 h-10 flex items-center justify-center rounded-lg bg-white shadow-md shadow-gray-200 group transition-all duration-300">
+                <svg class="rounded-md transition-all duration-300 group-hover:scale-110" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 72 72" fill="none">
+                <path d="M45.8956 26.0879C46.8845 26.0879 47.8503 26.1701 48.8032 26.2876C47.0805 18.7224 39.1346 13 29.5799 13C18.7651 13 10 20.3257 10 29.3599C10 34.5686 12.9306 39.1897 17.4761 42.1798L14.8948 47.3562L21.9268 44.336C23.4347 44.873 25.0016 45.3152 26.6753 45.521C26.4465 44.5226 26.3166 43.4991 26.3166 42.4487C26.3166 33.4273 35.0976 26.0879 45.8956 26.0879ZM36.1064 20.3615C37.4577 20.3615 38.5536 21.4608 38.5536 22.8158C38.5536 24.1713 37.4578 25.2698 36.1064 25.2698C34.7543 25.2698 33.6589 24.1713 33.6589 22.8158C33.6589 21.4607 34.7543 20.3615 36.1064 20.3615ZM23.0531 25.2698C21.7016 25.2698 20.6057 24.1713 20.6057 22.8158C20.6057 21.4608 21.7017 20.3615 23.0531 20.3615C24.4045 20.3615 25.5006 21.4608 25.5006 22.8158C25.5005 24.1713 24.4044 25.2698 23.0531 25.2698Z" fill="#51C332"/>
+                <path d="M62.2121 42.4484C62.2121 35.22 54.9051 29.3599 45.8956 29.3599C36.8858 29.3599 29.5799 35.22 29.5799 42.4484C29.5799 49.6763 36.8858 55.5365 45.8956 55.5365C47.3773 55.5365 48.7867 55.3271 50.1542 55.0297L58.9489 58.8084L55.9072 52.713C59.7191 50.3174 62.2121 46.6335 62.2121 42.4484ZM41.001 41.6303C39.6496 41.6303 38.5534 40.5314 38.5534 39.1757C38.5534 37.8207 39.6495 36.7222 41.001 36.7222C42.3528 36.7222 43.4482 37.8212 43.4482 39.1757C43.4482 40.5316 42.3526 41.6303 41.001 41.6303ZM50.7905 41.6303C49.4385 41.6303 48.3433 40.5314 48.3433 39.1757C48.3433 37.8207 49.4384 36.7222 50.7905 36.7222C52.1425 36.7222 53.238 37.8212 53.238 39.1757C53.238 40.5316 52.1425 41.6303 50.7905 41.6303Z" fill="#51C332"/>
+                </svg>
+                </button>
+                
+             
+                
+                <button class="w-10 h-10 flex items-center justify-center rounded-lg bg-white shadow-md shadow-gray-200 group transition-all duration-300">
+                    <svg class="rounded-md transition-all duration-300 group-hover:scale-110" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="328 355 335 276" fill="none">
+                    <path d="M 630, 425
+                    A 195, 195 0 0 1 331, 600
+                    A 142, 142 0 0 0 428, 570
+                    A  70,  70 0 0 1 370, 523
+                    A  70,  70 0 0 0 401, 521
+                    A  70,  70 0 0 1 344, 455
+                    A  70,  70 0 0 0 372, 460
+                    A  70,  70 0 0 1 354, 370
+                    A 195, 195 0 0 0 495, 442
+                    A  67,  67 0 0 1 611, 380
+                    A 117, 117 0 0 0 654, 363
+                    A  65,  65 0 0 1 623, 401
+                    A 117, 117 0 0 0 662, 390
+                    A  65,  65 0 0 1 630, 425
+                    Z" fill="#3BA9EE"/>
+                    <path d="M30.8811 44.1617L44.4392 36.3124L30.8811 28.463V44.1617Z" fill="white"/>
+                    </svg>
+                    </button>
+                
+                <button class="w-10 h-10 flex items-center justify-center rounded-lg bg-white shadow-md shadow-gray-200 group transition-all duration-300">
+                <svg class="rounded-md transition-all duration-300 group-hover:scale-110" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 72 72" fill="none">
+                <path d="M61.1026 23.7185C60.5048 21.471 58.7363 19.6981 56.4863 19.0904C52.4181 18 36.0951 18 36.0951 18C36.0951 18 19.7805 18 15.7039 19.0904C13.4622 19.6897 11.6937 21.4627 11.0876 23.7185C10 27.7971 10 36.3124 10 36.3124C10 36.3124 10 44.8276 11.0876 48.9063C11.6854 51.1537 13.4539 52.9267 15.7039 53.5343C19.7805 54.6247 36.0951 54.6247 36.0951 54.6247C36.0951 54.6247 52.4181 54.6247 56.4863 53.5343C58.728 52.935 60.4965 51.162 61.1026 48.9063C62.1902 44.8276 62.1902 36.3124 62.1902 36.3124C62.1902 36.3124 62.1902 27.7971 61.1026 23.7185Z" fill="#FF3000"/>
+                <path d="M30.8811 44.1617L44.4392 36.3124L30.8811 28.463V44.1617Z" fill="white"/>
+                </svg>
+                </button>
+    
+                </div>
+                                    
+        </div>
+  
+        <button id="toggleOpen" class='lg:hidden'>
+          <svg class="w-7 h-7" fill="#000" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <!-- News Section -->
+  <div class="news-ticker-wrapper text-lg font-semibold flex justify-center">
+    <div class=" w-40 px-2 bg-black text-white">Latest News</div>
+    <div class="news-data-strip ">
+      <div class="news-data-strip__ticker-viewport ">
+        <div class="news-data-strip__tickers-list-first">
+        </div>
+        <div class="news-data-strip__tickers-list-second">
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Slider Section -->
+<div class="bg-[#010E4F] ">
+  <h1 class="flex justify-center pt-5 text-[#D20009] font-bold sm:text-[35px]">Alif <span class="text-white px-10 border-2 rounded-full mx-2"><span class="animated swing">BOILER</span></span>Company Ltd.</h1>
+<swiper-container class="mySwiper "  space-between="30"
+    centered-slides="true" autoplay-delay="3000" autoplay-disable-on-interaction="false">
+    <swiper-slide>
+    <img class="w-[600px] relative" src="/img/Alif-Horizontal-Jhute-Boiler-S-Series (1).png" alt="">
+    <div class="absolute" data-aos="zoom-in"  data-aos-duration="2000">
+      <h2 class="text-[35px] text-white">Lorem ipsum dolor sit.</h2>
+      <p class="text-white text-[14px] sm:text-lg  px-16 py-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam et suscipit modi doloribus dolores possimus quod quaerat, fugit perferendis magnam veritatis velit facere eaque qui ducimus, molestias cum sed nobis!</p>
+      <button class="bg-[#D20009] hover:bg-[#010E4F] p-2 px-6 py-2 mt-3 sm:mt-5 text-white border-2 border-white">Click Here</button>
+    </div>
+  </swiper-slide>
+  <swiper-slide>
+    <img class="w-[600px] relative" src="/img/Alif-Horizontal-Jhute-Boiler-S-Series (1).png" alt="">
+    <div class="absolute" data-aos="zoom-in"  data-aos-duration="3000">
+      <h2 class="text-[35px] text-white">Lorem ipsum dolor sit.</h2>
+      <p class="text-white text-[14px] sm:text-lg  px-16 py-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam et suscipit modi doloribus dolores possimus quod quaerat, fugit perferendis magnam veritatis velit facere eaque qui ducimus, molestias cum sed nobis!</p>
+      <button class="bg-[#D20009] hover:bg-[#010E4F] p-2 px-6 py-2 mt-3 sm:mt-5 text-white border-2 border-white">Click Here</button>
+    </div>
+  </swiper-slide>
+  <swiper-slide>
+    <img class="w-[600px] relative" src="/img/Alif-Horizontal-Jhute-Boiler-S-Series (1).png" alt="">
+    <div class="absolute" data-aos="zoom-in"  data-aos-duration="3000">
+      <h2 class="text-[35px] text-white">Lorem ipsum dolor sit.</h2>
+      <p class="text-white text-[14px] sm:text-lg  px-16 py-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam et suscipit modi doloribus dolores possimus quod quaerat, fugit perferendis magnam veritatis velit facere eaque qui ducimus, molestias cum sed nobis!</p>
+      <button class="bg-[#D20009] hover:bg-[#010E4F] p-2 px-6 py-2 mt-3 sm:mt-5 text-white border-2 border-white">Click Here</button>
+    </div>
+  </swiper-slide>
+  <swiper-slide>
+    <img class="w-[600px] relative" src="/img/Alif-Horizontal-Jhute-Boiler-S-Series (1).png" alt="">
+    <div class="absolute" data-aos="zoom-in"  data-aos-duration="3000">
+      <h2 class="text-[35px] text-white ">Lorem ipsum dolor sit.</h2>
+      <p class="text-white text-[14px] sm:text-lg  px-16 py-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam et suscipit modi doloribus dolores possimus quod quaerat, fugit perferendis magnam veritatis velit facere eaque qui ducimus, molestias cum sed nobis!</p>
+      <button class="bg-[#D20009] hover:bg-[#010E4F] p-2 px-6 py-2 mt-3 sm:mt-5 text-white border-2 border-white">Click Here</button>
+    </div>
+  </swiper-slide>
+  </swiper-container>
+</div>
+
+<!-- content section -->
+<h2 class="text-center text-[40px] font-bold text-[#D20009] py-10">ALIF BOILER Company Bangladesh</h2>
+<div class="flex justify-center">
+  <hr class="w-[1000px]">
+</div>
+<div class="-my-8 divide-y-2 divide-gray-100 px-10 lg:px-20 xl:px-44 py-10 ">
+  <div class="py-8 flex flex-wrap md:flex-nowrap">
+    <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+      <img src="/img/WhatsApp-Image-2022-09-10-at-10.55.14-AM-300x225.jpeg" alt="">
+    </div>
+    <div class="md:flex-grow sm:pl-8">
+      <h2 class=" font-medium text-gray-900 title-font mb-2 italic">Bitters hashtag waistcoat fashion axe chia unicorn</h2>
+      <p class="leading-relaxed font-medium italic">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
+    
+    </div>
+  </div>
+  </div>
+  <div class="-my-8 divide-y-2 divide-gray-100 px-10 lg:px-20 xl:px-44 py-0 sm:py-10 ">
+    <div class=" py-0 sm:py-8 flex flex-wrap md:flex-nowrap">
+      <div class="md:flex-grow ">
+        <h2 class="font-medium font-medium text-gray-900 title-font mb-2 italic ">Bitters hashtag waistcoat fashion axe chia unicorn</h2>
+        <p class="leading-relaxed font-medium italic">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
+      
+      </div>
+      <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+        <img class="hidden sm:block" src="/img/WhatsApp-Image-2022-09-10-at-10.55.14-AM-300x225.jpeg" alt="">
+      </div>
+    </div>
+    </div>
+  <script>
+
+//  Navbar items 
+    var toggleOpen = document.getElementById('toggleOpen');
+  var toggleClose = document.getElementById('toggleClose');
+  var collapseMenu = document.getElementById('collapseMenu');
+
+  function handleClick() {
+    if (collapseMenu.style.display === 'block') {
+      collapseMenu.style.display = 'none';
+    } else {
+      collapseMenu.style.display = 'block';
+    }
+  }
+
+  toggleOpen.addEventListener('click', handleClick);
+  toggleClose.addEventListener('click', handleClick);
+  // News Tricker
+  /** Ticker.js - see Bloomberg.com */
+/** class: Ticker
+ * main Ticker instance
+ */
+function Ticker() {
+  // property and method definitions
+  this.tickerWrapperSelector = ".news-data-strip";
+  this.tickerViewportSelector = ".news-data-strip__ticker-viewport";
+  this.tickerFirstListSelector = ".news-data-strip__tickers-list-first";
+  this.tickerSecondListSelector = ".news-data-strip__tickers-list-second";
+
+  this.baseTickersUrl = "https://techcrunch.com/wp-json/wp/v2/posts";
+  this.isPlaying = !0;
+  this.element = document.querySelector(this.tickerWrapperSelector);
+  this.viewportContainer = this.element.querySelector(
+    this.tickerViewportSelector
+  );
+  this.firstTickersContainer = this.element.querySelector(
+    this.tickerFirstListSelector
+  );
+  this.secondTickersContainer = this.element.querySelector(
+    this.tickerSecondListSelector
+  );
+}
+
+/* method: Ticker::initialize()
+ * initializes the Ticker
+ */
+Ticker.prototype.initialize = function () {
+  var self = this;
+  this.requestTickers();
+  var t = null,
+    stop = function () {
+      self.isPlaying ? self.pauseAnimation() : clearTimeout(t);
+    },
+    play = function () {
+      self.isPlaying ||
+        (t = setTimeout(function () {
+          self.playAnimation();
+        }, 1000));
+    };
+  this.viewportContainer.addEventListener("focusin", stop);
+  this.viewportContainer.addEventListener("focusout", play);
+  this.viewportContainer.addEventListener("mouseenter", stop);
+  this.viewportContainer.addEventListener("mouseleave", play);
+};
+
+/* method: Ticker::requestTickers()
+ * request the tickers
+ */
+Ticker.prototype.requestTickers = function () {
+  var self = this;
+  this.fetchTickers().then(function (posts) {
+    self.addTickers(posts);
+  });
+};
+
+/* method: Ticker::fetchTickers()
+ * request the tickers
+ */
+Ticker.prototype.fetchTickers = function () {
+  return fetch("" + this.baseTickersUrl + "?per_page=5")
+    .then(function (response) {
+      return response.json();
+    })
+    .catch(function (err) {
+      return console.error("Ticker call failed.", err), [];
+    });
+};
+
+/* method: Ticker::addTickers()
+ * add the tickers to the page
+ */
+Ticker.prototype.addTickers = function (posts) {
+  var self = this;
+  posts.forEach(function (post) {
+    var ticker = {
+        id: post.id,
+        name: post.title.rendered,
+        date: post.date,
+        link: post.link
+      },
+      listOneItem = new TickerItem(ticker),
+      listTwoItem = new TickerItem(ticker);
+    self.firstTickersContainer.appendChild(listOneItem.render().element),
+      self.secondTickersContainer.appendChild(listTwoItem.render().element);
+  }),
+    setTimeout(function () {
+      self.firstTickersContainer.classList.add("animate-tickers-left"),
+        self.secondTickersContainer.classList.add("animate-tickers-left");
+    }, 1000);
+};
+
+/* method: Ticker::setLeft()
+ * calculate the left position of the lists
+ */
+Ticker.prototype.setLeft = function () {
+  var e = this.element.getBoundingClientRect().left,
+    t = this.firstTickersContainer.getBoundingClientRect(),
+    i = this.secondTickersContainer.getBoundingClientRect(),
+    n = t.left - (e + 32),
+    a = i.left - (e + 32),
+    r = n;
+  a < 0 && (r = a);
+  var s = "left: " + r + "px";
+  this.firstTickersContainer.setAttribute("style", s),
+    this.secondTickersContainer.setAttribute("style", s);
+};
+
+/* method: Ticker::pauseAnimation()
+ * pause the animation
+ */
+Ticker.prototype.pauseAnimation = function () {
+  this.setLeft(),
+    this.firstTickersContainer.classList.remove("animate-tickers-left"),
+    this.secondTickersContainer.classList.remove("animate-tickers-left"),
+    (this.isPlaying = !1);
+};
+
+/* method: Ticker::playAnimation()
+ * play the animation
+ */
+Ticker.prototype.playAnimation = function () {
+  this.firstTickersContainer.classList.add("animate-tickers-left"),
+    this.secondTickersContainer.classList.add("animate-tickers-left"),
+    (this.isPlaying = !0);
+};
+
+/** class: TickerItem
+ * main TickerItem instance
+ */
+function TickerItem(ticker) {
+  this.model = ticker;
+  this.element = null;
+  /*this.id = ticker.id;
+  this.title = ticker.name;
+  this.date = ticker.date;
+  this.link = ticker.link;*/
+}
+
+/* method TickerItem::replaceModel()
+ * replaces the current model with a new one
+ */
+TickerItem.prototype.replaceModel = function (newItem) {
+  (this.model = newItem), this.render();
+};
+
+/* method TickerItem::render()
+ * creates list item, then renders it into
+ * the <correct list> element
+ */
+TickerItem.prototype.render = function () {
+  var ticker = this.model,
+    id = ticker.id,
+    name = ticker.name,
+    date = ticker.date,
+    link = ticker.link;
+  var dateOptions = {
+    year: "numeric",
+    month: "long",
+    day: "numeric"
+  };
+  var dateOutput = new Date(date).toLocaleDateString("en-US", dateOptions);
+  return (
+    this.ensureElement(id),
+    (this.element.innerHTML =
+      '<a href="' +
+      link +
+      '" class="news-data-strip__ticker-link"><div class="news-data-strip__ticker-label">' +
+      name +
+      '</div><div class="news-data-strip__ticker-date">' +
+      dateOutput +
+      "</div></a>"),
+    this
+  );
+};
+
+/* method TickerItem::ensureElement()
+ * ensure we have an element, otherwise create it
+ */
+TickerItem.prototype.ensureElement = function (id) {
+  this.element ||
+    ((this.element = document.createElement("li")),
+    this.element.classList.add("news-data-strip__ticker"));
+};
+
+/**
+ * The Ticker app initalizer
+ */
+var tickerApp = {
+  ticker: null,
+
+  initialize: function () {
+    // Init the Ticker
+    tickerApp.ticker = new Ticker();
+    tickerApp.ticker.initialize();
+  }
+};
+
+window.onload = function () {
+  tickerApp.initialize();
+};
+// slider link
+
+  </script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
+</body>
+</html>
