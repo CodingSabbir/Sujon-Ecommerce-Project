@@ -284,58 +284,19 @@
   /* Set a maximum width */
 }
 
-/* Slider  */
-swiper-container {
-      width: 100%;
-      height: 100%;
-      /* background: #010E4F; */
-     
-    }
-
-    swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      margin: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-top: 20px;
-      padding-bottom: 20px;
-    }
-
-    swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      
-    }
-
-/* text roted */
-@keyframes swing {
-    0% { transform: rotate(0deg); }
-    50% { transform: rotate(15deg); }
-    100% { transform: rotate(0deg); }
-  }
-
-  /* Applying animation to the text */
-  .animated.swing {
-    display: inline-block;
-    animation: swing 1s infinite;
-  }
-  
   </style>
 </head>
 <body>
   <!-- head section-->
   <head>
-    <h2 class="bg-[#2C3494] p-2 text-white text-center font-bold sm:text-[19px] font-sans-serif">Innovating Sustainable Solutions For Boiler</h2>
+    <h2 class="bg-[#2C3494] p-2 text-white  justify-center font-bold sm:text-[19px] font-sans-serif">Innovating Sustainable Solutions For Boiler</h2>
   </head>
   <!-- header section -->
   <div class="flex  justify-between items-center lg:px-10 p-4 bg-[#EDF0F2]">
     <div >
         <img class="lg:ml-10 w-28 sm:w-38 md:w-42 lg:w-44" src="/img/ABC-Circle-Logo-Icon-Text-150x150.png" alt="">
     </div>
+    <!-- social icon -->
     <div class="hidden sm:block">
         <div class=" w-full h-auto py-8 flex  items-center justify-center sm:gap-3 lg:gap-4  xl:gap-8 flex-wrap">
             <button class="w-10 h-10 flex items-center justify-center rounded-lg bg-white shadow-md shadow-gray-200 group transition-all duration-300">
@@ -432,7 +393,7 @@ swiper-container {
         <ul
           class='lg:flex lg:gap-x-10 max-lg:space-y-3 max-lg:fixed max-lg:bg-[#D20009] max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50'>
          
-          <li class='max-lg:border-b max-lg:py-3'><a href='index.html'
+          <li class='max-lg:border-b max-lg:py-3'><a href='javascript:void(0)'
               class=' text-[15px] font-bold text-white  block'>HOME</a></li>
           <li class='group max-lg:border-b max-lg:py-3 relative'>
             <a href='javascript:void(0)'
@@ -633,322 +594,256 @@ swiper-container {
       </div>
     </div>
   </div>
-<!-- Slider Section -->
-<div class="bg-[#010E4F] ">
-  <h1 class="flex justify-center pt-5 text-[#D20009] font-bold sm:text-[35px]">Alif <span class="text-white px-10 border-2 rounded-full mx-2"><span class="animated swing">BOILER</span></span>Company Ltd.</h1>
-<swiper-container class="mySwiper "  space-between="30"
-    centered-slides="true" autoplay-delay="3000" autoplay-disable-on-interaction="false">
-    <swiper-slide>
-    <img class="w-[600px] relative" src="/img/Alif-Horizontal-Jhute-Boiler-S-Series (1).png" alt="">
-    <div class="absolute" data-aos="zoom-in"  data-aos-duration="2000">
-      <h2 class="text-[35px] text-white">Lorem ipsum dolor sit.</h2>
-      <p class="text-white text-[14px] sm:text-lg  px-16 py-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam et suscipit modi doloribus dolores possimus quod quaerat, fugit perferendis magnam veritatis velit facere eaque qui ducimus, molestias cum sed nobis!</p>
-      <button class="bg-[#D20009] hover:bg-[#010E4F] p-2 px-6 py-2 mt-3 sm:mt-5 text-white border-2 border-white">Click Here</button>
-    </div>
-  </swiper-slide>
-  <swiper-slide>
-    <img class="w-[600px] relative" src="/img/Alif-Horizontal-Jhute-Boiler-S-Series (1).png" alt="">
-    <div class="absolute" data-aos="zoom-in"  data-aos-duration="3000">
-      <h2 class="text-[35px] text-white">Lorem ipsum dolor sit.</h2>
-      <p class="text-white text-[14px] sm:text-lg  px-16 py-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam et suscipit modi doloribus dolores possimus quod quaerat, fugit perferendis magnam veritatis velit facere eaque qui ducimus, molestias cum sed nobis!</p>
-      <button class="bg-[#D20009] hover:bg-[#010E4F] p-2 px-6 py-2 mt-3 sm:mt-5 text-white border-2 border-white">Click Here</button>
-    </div>
-  </swiper-slide>
-  <swiper-slide>
-    <img class="w-[600px] relative" src="/img/Alif-Horizontal-Jhute-Boiler-S-Series (1).png" alt="">
-    <div class="absolute" data-aos="zoom-in"  data-aos-duration="3000">
-      <h2 class="text-[35px] text-white">Lorem ipsum dolor sit.</h2>
-      <p class="text-white text-[14px] sm:text-lg  px-16 py-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam et suscipit modi doloribus dolores possimus quod quaerat, fugit perferendis magnam veritatis velit facere eaque qui ducimus, molestias cum sed nobis!</p>
-      <button class="bg-[#D20009] hover:bg-[#010E4F] p-2 px-6 py-2 mt-3 sm:mt-5 text-white border-2 border-white">Click Here</button>
-    </div>
-  </swiper-slide>
-  <swiper-slide>
-    <img class="w-[600px] relative" src="/img/Alif-Horizontal-Jhute-Boiler-S-Series (1).png" alt="">
-    <div class="absolute" data-aos="zoom-in"  data-aos-duration="3000">
-      <h2 class="text-[35px] text-white ">Lorem ipsum dolor sit.</h2>
-      <p class="text-white text-[14px] sm:text-lg  px-16 py-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam et suscipit modi doloribus dolores possimus quod quaerat, fugit perferendis magnam veritatis velit facere eaque qui ducimus, molestias cum sed nobis!</p>
-      <button class="bg-[#D20009] hover:bg-[#010E4F] p-2 px-6 py-2 mt-3 sm:mt-5 text-white border-2 border-white">Click Here</button>
-    </div>
-  </swiper-slide>
-  </swiper-container>
+
+<!-- text content section -->
+<div class="pb-20">
+    <h1 class=" text-[20px] sm:text-[32px] px-8  justify-center font-semibold pt-20 break-all pb-4 ">Elevate Your Industrial Operations with Alif Boiler's Top-Quality Steam Horizontal Gas Boiler in Bangladesh</h1>
+<p class=" text-14 sm:text-[18px] px-8 sm:px-10  break-all   justify-center sm:text-start py-5 sm:py-0">Discover unparalleled efficiency and reliability with Alif Boiler’s cutting-edge <span class="font-bold">Best steam Horizontal Gas Boiler in Bangladesh</span>, meticulously engineered to meet and exceed international standards of quality. Our boilers are crafted to optimize performance, ensuring seamless operations for your industrial needs in Bangladesh. Experience unmatched precision and durability, backed by a commitment to excellence that sets us apart in the industry. Trust Alif Boiler for superior solutions that elevate your business to new heights.</p>
 </div>
-
-<!-- content section -->
-<h2 class="text-center text-[40px] font-bold text-[#D20009] py-10">ALIF BOILER Company Bangladesh</h2>
-<div class="flex justify-center">
-  <hr class="w-[1200px]">
+<!-- Alif Horizontal Gas Boiler (T-Series) -->
+<div class="flex flex-col sm:flex-row ml-5 sm:ml-0 justify-between py-5">
+    <div>
+        <img   src="https://alifboiler.com/wp-content/uploads/2022/02/Alif-Horizontal-Gas-Boiler-T-Series.png" class="attachment-full size-full wp-image-562 " alt="s`" srcset="https://alifboiler.com/wp-content/uploads/2022/02/Alif-Horizontal-Gas-Boiler-T-Series.png 577w, https://alifboiler.com/wp-content/uploads/2022/02/Alif-Horizontal-Gas-Boiler-T-Series-300x225.png 300w">
+    </div>
+    <div>
+        <h1 class="text-[32px] py-5 text-[#D20009]  justify-center sm:text-start font-semibold">Alif Horizontal Gas Boiler (T-Series)</h1>
+            <li class="text-[18px] font-semibold">Capacity：1 T/hr to 5 T/hr</li>
+            <li class="text-[18px] font-semibold">Fuel：Gas, LPG, CNG & Light oil.</li>
+            <li class="text-[18px] font-semibold">Low Emission</li>
+            <li class="text-[18px] font-semibold">Low Emission</li>
+            <li class="text-[18px] font-semibold">Low Emission</li>
+            <li class="text-[18px] font-semibold">Used for：Foods, Garment, Textile, Paper, Brewery, Rice Mill, Dairy Products, Laundry, Poultry feed, Package, Plywood, Building material, Chemical, etc</li>
+            <!-- social icon -->
+            <div class="">
+                <div class=" w-full h-auto py-8 flex  items-center justify-center gap-4 sm:gap-3 lg:gap-4  xl:gap-8 flex-wrap">
+                    <button class="w-10 h-10 flex items-center justify-center rounded-lg bg-white shadow-md shadow-gray-200 group transition-all duration-300">
+                    <svg class="transition-all duration-300 group-hover:scale-110"
+                    xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 72 72" fill="none">
+                      <path d="M46.4927 38.6403L47.7973 30.3588H39.7611V24.9759C39.7611 22.7114 40.883 20.4987 44.4706 20.4987H48.1756V13.4465C46.018 13.1028 43.8378 12.9168 41.6527 12.8901C35.0385 12.8901 30.7204 16.8626 30.7204 24.0442V30.3588H23.3887V38.6403H30.7204V58.671H39.7611V38.6403H46.4927Z" fill="#337FFF"/>
+                    </svg>
+                    </button>
+                    
+                  
+                    
+                    <button class="w-10 h-10 flex items-center justify-center rounded-lg bg-white shadow-md shadow-gray-200 group transition-all duration-300">
+                    <svg class="transition-all duration-300 group-hover:scale-110" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 71 72" fill="none">
+                    <path d="M12.5762 56.8405L15.8608 44.6381C13.2118 39.8847 12.3702 34.3378 13.4904 29.0154C14.6106 23.693 17.6176 18.952 21.9594 15.6624C26.3012 12.3729 31.6867 10.7554 37.1276 11.1068C42.5685 11.4582 47.6999 13.755 51.5802 17.5756C55.4604 21.3962 57.8292 26.4844 58.2519 31.9065C58.6746 37.3286 57.1228 42.7208 53.8813 47.0938C50.6399 51.4668 45.9261 54.5271 40.605 55.7133C35.284 56.8994 29.7125 56.1318 24.9131 53.5513L12.5762 56.8405ZM25.508 48.985L26.2709 49.4365C29.7473 51.4918 33.8076 52.3423 37.8191 51.8555C41.8306 51.3687 45.5681 49.5719 48.4489 46.7452C51.3298 43.9185 53.1923 40.2206 53.7463 36.2279C54.3002 32.2351 53.5143 28.1717 51.5113 24.6709C49.5082 21.1701 46.4003 18.4285 42.6721 16.8734C38.9438 15.3184 34.8045 15.0372 30.8993 16.0736C26.994 17.11 23.5422 19.4059 21.0817 22.6035C18.6212 25.801 17.2903 29.7206 17.2963 33.7514C17.293 37.0937 18.2197 40.3712 19.9732 43.2192L20.4516 44.0061L18.6153 50.8167L25.508 48.985Z" fill="#00D95F"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M44.0259 36.8847C43.5787 36.5249 43.0549 36.2716 42.4947 36.1442C41.9344 36.0168 41.3524 36.0186 40.793 36.1495C39.9524 36.4977 39.4093 37.8134 38.8661 38.4713C38.7516 38.629 38.5833 38.7396 38.3928 38.7823C38.2024 38.8251 38.0028 38.797 37.8316 38.7034C34.7543 37.5012 32.1748 35.2965 30.5122 32.4475C30.3704 32.2697 30.3033 32.044 30.325 31.8178C30.3467 31.5916 30.4555 31.3827 30.6286 31.235C31.2344 30.6368 31.6791 29.8959 31.9218 29.0809C31.9756 28.1818 31.7691 27.2863 31.3269 26.5011C30.985 25.4002 30.3344 24.42 29.4518 23.6762C28.9966 23.472 28.4919 23.4036 27.9985 23.4791C27.5052 23.5546 27.0443 23.7709 26.6715 24.1019C26.0242 24.6589 25.5104 25.3537 25.168 26.135C24.8256 26.9163 24.6632 27.7643 24.6929 28.6165C24.6949 29.0951 24.7557 29.5716 24.8739 30.0354C25.1742 31.1497 25.636 32.2144 26.2447 33.1956C26.6839 33.9473 27.163 34.6749 27.6801 35.3755C29.3607 37.6767 31.4732 39.6305 33.9003 41.1284C35.1183 41.8897 36.42 42.5086 37.7799 42.973C39.1924 43.6117 40.752 43.8568 42.2931 43.6824C43.1711 43.5499 44.003 43.2041 44.7156 42.6755C45.4281 42.1469 45.9995 41.4518 46.3795 40.6512C46.6028 40.1675 46.6705 39.6269 46.5735 39.1033C46.3407 38.0327 44.9053 37.4007 44.0259 36.8847Z" fill="#00D95F"/>
+                    </svg>
+                    </button>
+                    
+                 
+                    
+                    <button class="w-10 h-10 flex items-center justify-center rounded-lg bg-white shadow-md shadow-gray-200 group transition-all duration-300">
+                    <svg class="rounded-md transition-all duration-300 group-hover:scale-110" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 72 72" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6975 11C12.6561 11 11 12.6057 11 14.5838V57.4474C11 59.4257 12.6563 61.03 14.6975 61.03H57.3325C59.3747 61.03 61.03 59.4255 61.03 57.4468V14.5838C61.03 12.6057 59.3747 11 57.3325 11H14.6975ZM26.2032 30.345V52.8686H18.7167V30.345H26.2032ZM26.6967 23.3793C26.6967 25.5407 25.0717 27.2703 22.4615 27.2703L22.4609 27.2701H22.4124C19.8998 27.2701 18.2754 25.5405 18.2754 23.3791C18.2754 21.1686 19.9489 19.4873 22.5111 19.4873C25.0717 19.4873 26.6478 21.1686 26.6967 23.3793ZM37.833 52.8686H30.3471L30.3469 52.8694C30.3469 52.8694 30.4452 32.4588 30.3475 30.3458H37.8336V33.5339C38.8288 31.9995 40.6098 29.8169 44.5808 29.8169C49.5062 29.8169 53.1991 33.0363 53.1991 39.9543V52.8686H45.7133V40.8204C45.7133 37.7922 44.6293 35.7269 41.921 35.7269C39.8524 35.7269 38.6206 37.1198 38.0796 38.4653C37.8819 38.9455 37.833 39.6195 37.833 40.2918V52.8686Z" fill="#006699"/>
+                    </svg>
+                    </button>
+                    
+                  
+                    
+                    <button class="w-10 h-10 flex items-center justify-center rounded-lg bg-white shadow-md shadow-gray-200 group transition-all duration-300">
+                    <svg class="rounded-md transition-all duration-300 group-hover:scale-110" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 72 72" fill="none">
+                    <path d="M45.8956 26.0879C46.8845 26.0879 47.8503 26.1701 48.8032 26.2876C47.0805 18.7224 39.1346 13 29.5799 13C18.7651 13 10 20.3257 10 29.3599C10 34.5686 12.9306 39.1897 17.4761 42.1798L14.8948 47.3562L21.9268 44.336C23.4347 44.873 25.0016 45.3152 26.6753 45.521C26.4465 44.5226 26.3166 43.4991 26.3166 42.4487C26.3166 33.4273 35.0976 26.0879 45.8956 26.0879ZM36.1064 20.3615C37.4577 20.3615 38.5536 21.4608 38.5536 22.8158C38.5536 24.1713 37.4578 25.2698 36.1064 25.2698C34.7543 25.2698 33.6589 24.1713 33.6589 22.8158C33.6589 21.4607 34.7543 20.3615 36.1064 20.3615ZM23.0531 25.2698C21.7016 25.2698 20.6057 24.1713 20.6057 22.8158C20.6057 21.4608 21.7017 20.3615 23.0531 20.3615C24.4045 20.3615 25.5006 21.4608 25.5006 22.8158C25.5005 24.1713 24.4044 25.2698 23.0531 25.2698Z" fill="#51C332"/>
+                    <path d="M62.2121 42.4484C62.2121 35.22 54.9051 29.3599 45.8956 29.3599C36.8858 29.3599 29.5799 35.22 29.5799 42.4484C29.5799 49.6763 36.8858 55.5365 45.8956 55.5365C47.3773 55.5365 48.7867 55.3271 50.1542 55.0297L58.9489 58.8084L55.9072 52.713C59.7191 50.3174 62.2121 46.6335 62.2121 42.4484ZM41.001 41.6303C39.6496 41.6303 38.5534 40.5314 38.5534 39.1757C38.5534 37.8207 39.6495 36.7222 41.001 36.7222C42.3528 36.7222 43.4482 37.8212 43.4482 39.1757C43.4482 40.5316 42.3526 41.6303 41.001 41.6303ZM50.7905 41.6303C49.4385 41.6303 48.3433 40.5314 48.3433 39.1757C48.3433 37.8207 49.4384 36.7222 50.7905 36.7222C52.1425 36.7222 53.238 37.8212 53.238 39.1757C53.238 40.5316 52.1425 41.6303 50.7905 41.6303Z" fill="#51C332"/>
+                    </svg>
+                    </button>
+                    
+                 
+                    
+                    <button class="w-10 h-10 flex items-center justify-center rounded-lg bg-white shadow-md shadow-gray-200 group transition-all duration-300">
+                        <svg class="rounded-md transition-all duration-300 group-hover:scale-110" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="328 355 335 276" fill="none">
+                        <path d="M 630, 425
+                        A 195, 195 0 0 1 331, 600
+                        A 142, 142 0 0 0 428, 570
+                        A  70,  70 0 0 1 370, 523
+                        A  70,  70 0 0 0 401, 521
+                        A  70,  70 0 0 1 344, 455
+                        A  70,  70 0 0 0 372, 460
+                        A  70,  70 0 0 1 354, 370
+                        A 195, 195 0 0 0 495, 442
+                        A  67,  67 0 0 1 611, 380
+                        A 117, 117 0 0 0 654, 363
+                        A  65,  65 0 0 1 623, 401
+                        A 117, 117 0 0 0 662, 390
+                        A  65,  65 0 0 1 630, 425
+                        Z" fill="#3BA9EE"/>
+                        <path d="M30.8811 44.1617L44.4392 36.3124L30.8811 28.463V44.1617Z" fill="white"/>
+                        </svg>
+                        </button>
+                    
+                    <button class="w-10 h-10 flex items-center justify-center rounded-lg bg-white shadow-md shadow-gray-200 group transition-all duration-300">
+                    <svg class="rounded-md transition-all duration-300 group-hover:scale-110" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 72 72" fill="none">
+                    <path d="M61.1026 23.7185C60.5048 21.471 58.7363 19.6981 56.4863 19.0904C52.4181 18 36.0951 18 36.0951 18C36.0951 18 19.7805 18 15.7039 19.0904C13.4622 19.6897 11.6937 21.4627 11.0876 23.7185C10 27.7971 10 36.3124 10 36.3124C10 36.3124 10 44.8276 11.0876 48.9063C11.6854 51.1537 13.4539 52.9267 15.7039 53.5343C19.7805 54.6247 36.0951 54.6247 36.0951 54.6247C36.0951 54.6247 52.4181 54.6247 56.4863 53.5343C58.728 52.935 60.4965 51.162 61.1026 48.9063C62.1902 44.8276 62.1902 36.3124 62.1902 36.3124C62.1902 36.3124 62.1902 27.7971 61.1026 23.7185Z" fill="#FF3000"/>
+                    <path d="M30.8811 44.1617L44.4392 36.3124L30.8811 28.463V44.1617Z" fill="white"/>
+                    </svg>
+                    </button>
+        
+                    </div>
+                                        
+            </div>
+    </div>
 </div>
-<div class="-my-8 divide-y-2 divide-gray-100 px-10 lg:px-20 xl:px-44 py-10 ">
-  <div class="py-8 flex flex-wrap md:flex-nowrap">
-    <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-      <img src="/img/WhatsApp-Image-2022-09-10-at-10.55.14-AM-300x225.jpeg" alt="">
-    </div>
-    <div class="md:flex-grow sm:pl-8">
-      <h2 class=" font-medium text-gray-900 title-font mb-2 italic">Bitters hashtag waistcoat fashion axe chia unicorn</h2>
-      <p class="leading-relaxed font-medium italic">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
-    
-    </div>
-  </div>
-  </div>
-  <div class="-my-8 divide-y-2 divide-gray-100 px-10 lg:px-20 xl:px-44 py-0 sm:py-10 ">
-    <div class=" py-0 sm:py-8 flex flex-wrap md:flex-nowrap">
-      <div class="md:flex-grow ">
-        <h2 class="font-medium  text-gray-900 title-font mb-2 italic ">Bitters hashtag waistcoat fashion axe chia unicorn</h2>
-        <p class="leading-relaxed font-medium italic">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
-      
-      </div>
-      <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-        <img class="hidden sm:block" src="/img/WhatsApp-Image-2022-09-10-at-10.55.14-AM-300x225.jpeg" alt="">
-      </div>
-    </div>
-    </div>
-    <div class="flex justify-center my-8 sm:my-0">
-      <hr class=" w-[1200px] ">
-    </div>
-    <!-- OUR ACHIEVEMENT -->
-    <section class="text-gray-600 body-font">
-      <div class="container px-5 py-10 mx-auto">
-        <h1 class="text-center font-bold text-[30px] text-[#D20009] py-8 ">OUR ACHIEVEMENT</h1>
-        <div class="flex flex-col sm:flex-row -m-4">
-          <div class="p-4 md:w-1/3">
-            <div class="h-full   overflow-hidden">
-              <img class="lg:h-96 md:h-36 w-full object-cover object-center " src="/img/20210228_172156-300x300.png" alt="blog">
-             
-            </div>
-          </div>
-          <div class="p-4 md:w-1/3">
-            <div class="h-full   overflow-hidden">
-              <img class="lg:h-96 md:h-36 w-full object-cover object-center" src="/img/IMG-20201008-WA0048-226x300.jpg" alt="blog">
-            </div>
-          </div>
-          <div class="p-4 md:w-1/3">
-            <div class="h-full   overflow-hidden">
-              <img class="lg:h-96 md:h-36 w-full object-cover object-center" src="/img/Award-300x300 (1).png" alt="blog">
-             
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-
-<!-- Our Client Logo Slider -->
-<div class="bg-[#D20009] my-16" >
-  <h1 class="text-center text-[24px] sm:text-[50px]  text-white font-semibold py-4 sm:py-7 items-center">Our Client</h1>
-  <swiper-container class="mySwiper " slides-per-view="5" centered-slides="true" space-between="30" pagination="true"
->
-<swiper-slide><img loading="lazy" decoding="async" width="1024" height="690" src="https://alifboiler.com/wp-content/uploads/2022/09/mondol-logo3-1024x690.png" class="jltma-logo-slider-img elementor-animation-" alt="aa" srcset="https://alifboiler.com/wp-content/uploads/2022/09/mondol-logo3-1024x690.png 1024w, https://alifboiler.com/wp-content/uploads/2022/09/mondol-logo3-600x404.png 600w, https://alifboiler.com/wp-content/uploads/2022/09/mondol-logo3-300x202.png 300w, https://alifboiler.com/wp-content/uploads/2022/09/mondol-logo3-768x517.png 768w, https://alifboiler.com/wp-content/uploads/2022/09/mondol-logo3.png 1140w" sizes="(max-width: 1024px) 100vw, 1024px"></swiper-slide>
-<swiper-slide><img loading="lazy" decoding="async" width="1024" height="690" src="https://alifboiler.com/wp-content/uploads/2022/09/kashfi-copy-1024x690.png" class="jltma-logo-slider-img elementor-animation-" alt="aaaaaaaaaa" srcset="https://alifboiler.com/wp-content/uploads/2022/09/kashfi-copy-1024x690.png 1024w, https://alifboiler.com/wp-content/uploads/2022/09/kashfi-copy-600x404.png 600w, https://alifboiler.com/wp-content/uploads/2022/09/kashfi-copy-300x202.png 300w, https://alifboiler.com/wp-content/uploads/2022/09/kashfi-copy-768x517.png 768w, https://alifboiler.com/wp-content/uploads/2022/09/kashfi-copy.png 1140w" sizes="(max-width: 1024px) 100vw, 1024px"></swiper-slide>
-<swiper-slide><img loading="lazy" decoding="async" width="1024" height="690" src="https://alifboiler.com/wp-content/uploads/2022/09/linktex-copy-1024x690.png" class="jltma-logo-slider-img elementor-animation-" alt="aa" srcset="https://alifboiler.com/wp-content/uploads/2022/09/linktex-copy-1024x690.png 1024w, https://alifboiler.com/wp-content/uploads/2022/09/linktex-copy-600x404.png 600w, https://alifboiler.com/wp-content/uploads/2022/09/linktex-copy-300x202.png 300w, https://alifboiler.com/wp-content/uploads/2022/09/linktex-copy-768x517.png 768w, https://alifboiler.com/wp-content/uploads/2022/09/linktex-copy.png 1140w" sizes="(max-width: 1024px) 100vw, 1024px"></swiper-slide>
-<swiper-slide><img loading="lazy" decoding="async" width="1024" height="690" src="https://alifboiler.com/wp-content/uploads/2022/09/kashfi-copy-1024x690.png" class="jltma-logo-slider-img elementor-animation-" alt="aaaaaaaaaa" srcset="https://alifboiler.com/wp-content/uploads/2022/09/kashfi-copy-1024x690.png 1024w, https://alifboiler.com/wp-content/uploads/2022/09/kashfi-copy-600x404.png 600w, https://alifboiler.com/wp-content/uploads/2022/09/kashfi-copy-300x202.png 300w, https://alifboiler.com/wp-content/uploads/2022/09/kashfi-copy-768x517.png 768w, https://alifboiler.com/wp-content/uploads/2022/09/kashfi-copy.png 1140w" sizes="(max-width: 1024px) 100vw, 1024px"></swiper-slide>
-<swiper-slide><img loading="lazy" decoding="async" width="1024" height="690" src="https://alifboiler.com/wp-content/uploads/2022/09/kashfi-copy-1024x690.png" class="jltma-logo-slider-img elementor-animation-" alt="aaaaaaaaaa" srcset="https://alifboiler.com/wp-content/uploads/2022/09/kashfi-copy-1024x690.png 1024w, https://alifboiler.com/wp-content/uploads/2022/09/kashfi-copy-600x404.png 600w, https://alifboiler.com/wp-content/uploads/2022/09/kashfi-copy-300x202.png 300w, https://alifboiler.com/wp-content/uploads/2022/09/kashfi-copy-768x517.png 768w, https://alifboiler.com/wp-content/uploads/2022/09/kashfi-copy.png 1140w" sizes="(max-width: 1024px) 100vw, 1024px"></swiper-slide>
-<swiper-slide><img loading="lazy" decoding="async" width="1024" height="690" src="https://alifboiler.com/wp-content/uploads/2022/09/kashfi-copy-1024x690.png" class="jltma-logo-slider-img elementor-animation-" alt="aaaaaaaaaa" srcset="https://alifboiler.com/wp-content/uploads/2022/09/kashfi-copy-1024x690.png 1024w, https://alifboiler.com/wp-content/uploads/2022/09/kashfi-copy-600x404.png 600w, https://alifboiler.com/wp-content/uploads/2022/09/kashfi-copy-300x202.png 300w, https://alifboiler.com/wp-content/uploads/2022/09/kashfi-copy-768x517.png 768w, https://alifboiler.com/wp-content/uploads/2022/09/kashfi-copy.png 1140w" sizes="(max-width: 1024px) 100vw, 1024px"></swiper-slide>
-<swiper-slide><img loading="lazy" decoding="async" width="1024" height="690" src="https://alifboiler.com/wp-content/uploads/2022/09/mhc-1024x690.png" class="jltma-logo-slider-img elementor-animation-" alt="aaaaaaaaaaa" srcset="https://alifboiler.com/wp-content/uploads/2022/09/mhc-1024x690.png 1024w, https://alifboiler.com/wp-content/uploads/2022/09/mhc-600x404.png 600w, https://alifboiler.com/wp-content/uploads/2022/09/mhc-300x202.png 300w, https://alifboiler.com/wp-content/uploads/2022/09/mhc-768x517.png 768w, https://alifboiler.com/wp-content/uploads/2022/09/mhc.png 1140w" sizes="(max-width: 1024px) 100vw, 1024px"></swiper-slide>
-</swiper-container>
-</div>
-
-    <section class="bg-[#D20009] px-5 sm:px-10 lg:px-32 py-5">
-      <h1 class=" text-[30px] sm:text-[40px] lg:text-[51px] text-[#F1F1F6] font-semibold text-center border-4 p-2 rounded-md border-gray-300">Why You Procure Buy Boiler From Alif Boiler Company Ltd</h1>
-    </section>
-
-<!-- iframe -->
-<section 
-data-aos="fade-right"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine"
-  class="ezy__featured51 light py-5  bg-[#D20009] mt-5 dark:bg-[#0b1727] text-black dark:text-white relative overflow-hidden z-10"
->
-  <div class="container px-4 mx-auto">
-    <div class="flex max-w-3xl justify-center text-center mx-auto">
-    
-    </div>
-    <div class="grid grid-cols-2 gap-6 items-center">
-      <div class="col-span-2 md:col-span-1">
-        <div class="relative mb-12">
-          <div class="elementor-element elementor-element-47d4484 jltma-glass-effect-no elementor-widget elementor-widget-video" data-id="47d4484" data-element_type="widget" data-settings="{&quot;youtube_url&quot;:&quot;https:\/\/youtu.be\/xLp9FsJrjkM&quot;,&quot;video_type&quot;:&quot;youtube&quot;,&quot;controls&quot;:&quot;yes&quot;}" data-widget_type="video.default">
-            <div class="elementor-widget-container">
-                <style>/*! elementor - v3.21.0 - 08-05-2024 */
-                    .elementor-widget-video .elementor-widget-container{overflow:hidden;transform:translateZ(0)}.elementor-widget-video .elementor-wrapper{aspect-ratio:var(--video-aspect-ratio)}.elementor-widget-video .elementor-wrapper iframe,.elementor-widget-video .elementor-wrapper video{height:100%;width:100%;display:flex;border:none;background-color:#000}@supports not (aspect-ratio:1/1){.elementor-widget-video .elementor-wrapper{position:relative;overflow:hidden;height:0;padding-bottom:calc(100% / var(--video-aspect-ratio))}.elementor-widget-video .elementor-wrapper iframe,.elementor-widget-video .elementor-wrapper video{position:absolute;top:0;right:0;bottom:0;left:0}}.elementor-widget-video .elementor-open-inline .elementor-custom-embed-image-overlay{position:absolute;top:0;right:0;bottom:0;left:0;background-size:cover;background-position:50%}.elementor-widget-video .elementor-custom-embed-image-overlay{cursor:pointer;text-align:center}.elementor-widget-video .elementor-custom-embed-image-overlay:hover .elementor-custom-embed-play i{opacity:1}.elementor-widget-video .elementor-custom-embed-image-overlay img{display:block;width:100%;aspect-ratio:var(--video-aspect-ratio);-o-object-fit:cover;object-fit:cover;-o-object-position:center center;object-position:center center}@supports not (aspect-ratio:1/1){.elementor-widget-video .elementor-custom-embed-image-overlay{position:relative;overflow:hidden;height:0;padding-bottom:calc(100% / var(--video-aspect-ratio))}.elementor-widget-video .elementor-custom-embed-image-overlay img{position:absolute;top:0;right:0;bottom:0;left:0}}.elementor-widget-video .e-hosted-video .elementor-video{-o-object-fit:cover;object-fit:cover}.e-con-inner>.elementor-widget-video,.e-con>.elementor-widget-video{width:var(--container-widget-width);--flex-grow:var(--container-widget-flex-grow)}</style>
-                <div class="elementor-wrapper elementor-open-inline">
-                    <iframe class="elementor-video " frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" title="National Industrial Fair 2019| Best Boiler Company in Bangladesh | 01713-223000" width="640" height="480" src="https://www.youtube.com/embed/xLp9FsJrjkM?controls=1&amp;rel=0&amp;playsinline=0&amp;modestbranding=0&amp;autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Falifboiler.com&amp;widgetid=1" id="widget2"></iframe>
-                </div>
-            </div>
+<!-- Parameter table data -->
+<h1 class="text-center text-[40px] sm:text-[50px] font-semibold text-[#9B0000]">Parameter</h1>
+<div class="flex w-screen h-screen p-2 sm:p-10">
+	<div class="flex flex-col w-full border-t border-r border-gary-300 ">
+        <div class="flex flex-shrink-0 bg-[#9B0000] text-white text-[8px] sm:text-[12px] lg:text-[18px] sm:font-bold">
+            <div class="flex items-center flex-grow w-0 h-10 px-2 border-b  border border-gary-300 justify-center "><span>Description</span></div>
+            <div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border  border-gary-300 justify-center"><span>Unit</span></div>
+            <div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border  border-gary-300 justify-center"><span>ABC-100-T</span></div>
+            <div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border  border-gary-300 justify-center"><span>ABC-150-T</span></div>
+            <div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border  border-gary-300 justify-center"><span>ABC-200-T	</span></div>
+            <div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border  border-gary-300 justify-center"><span>ABC-300-T	</span></div>
+            <div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border  border-gary-300 justify-center"><span>ABC-400-T</span></div>
+            <div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border  border-gary-300 justify-center"><span>ABC-500-T</span></div>
         </div>
         
-        </div>
-      </div>
-      <div class="col-span-2 md:col-span-1 mt-12 md:mt-0">
-        <div
-        class=" flex items-center  p-4 mb-4"
-        >
-        
-          <h4 class="text-[19px] text-white font-semibold">
-            <span class=" pr-2">1</span>Start making money today on each sale you make.
-          </h4>
-        </div>
-        <div
-          class=" flex items-center  p-4 mb-4"
-        >
-         
-          <h4 class="text-[19px] font-semibold text-white">
-            <span class=" pr-2">2</span> Sell from a big library of 1000+ courses
-          </h4>
-        </div>
-        <div
-        class=" flex items-center  p-4 mb-4"
-        >
-        
-          <h4 class="text-[19px] font-semibold text-white">
-            <span class="pr-2">3</span> Sell any courses that match your niche.
-          </h4>
-        </div>
-        <div
-        class=" flex items-center  p-4 mb-4"
-        >
-        
-          <h4 class="text-[19px] font-semibold text-white">
-            <span class=" pr-2">4</span> Easy tracking system through Rakuten affiliate platform.
-          </h4>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Govt. Inspection Process -->
-<div class="flex justify-center my-5 sm:my-10">
-  <hr class="w-[1200px] ">
+		<div class="overflow-auto">
+			<div class="flex flex-shrink-0 bg-[#E00000] text-white text-[8px] sm:text-[12px] lg:text-[16px] ">
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>100</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+                <div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+			</div>
+			<div class="flex flex-shrink-0 bg-[#fff] text-black text-[8px] sm:text-[12px] lg:text-[16px]">
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+                <div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+			</div>
+			<div class="flex flex-shrink-0 bg-[#E00000] text-white text-[8px] sm:text-[12px] lg:text-[16px]">
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+                <div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+			</div>
+			<div class="flex flex-shrink-0 bg-[#fff] text-black text-[8px] sm:text-[12px] lg:text-[16px]">
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+                <div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+			</div>
+			<div class="flex flex-shrink-0 bg-[#E00000] text-white text-[8px] sm:text-[12px] lg:text-[16px]">
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+                <div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+			</div>
+			<div class="flex flex-shrink-0 bg-[#fff] text-black text-[8px] sm:text-[12px] lg:text-[16px]">
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+                <div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+			</div>
+			<div class="flex flex-shrink-0 bg-[#E00000] text-white text-[8px] sm:text-[12px] lg:text-[16px]">
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+                <div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+			</div>
+            <div class="flex flex-shrink-0 bg-[#fff] text-black text-[8px] sm:text-[12px] lg:text-[16px]">
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+                <div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+			</div>
+			<div class="flex flex-shrink-0 bg-[#E00000] text-black text-[8px] sm:text-[12px] lg:text-[16px]">
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+                <div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+			</div>
+			<div class="flex flex-shrink-0 bg-[#fff] text-black text-[8px] sm:text-[12px] lg:text-[16px]">
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+                <div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+				<div class="flex items-center flex-grow w-0 h-10 px-2 border-b   border justify-center  border-gary-300"><span>Item</span></div>
+			</div>
+		</div>
+	</div>
 </div>
-<div class="sm:bg-[#555FF2]">
-  <h1 class="text-center text-[24px] sm:text-[32px]  text-black sm:text-[#D20009] font-semibold sm:py-7 items-center">Govt. Inspection Process</h1>
-  <swiper-container class="mySwiper " slides-per-view="3" centered-slides="true" pagination="true"
-navigation="true">
-<swiper-slide><img  src="./img/Govt-inspection-manufacturing-process-1-150x150.jpg" alt=""></swiper-slide>
-<swiper-slide><img src="./img/Govt-inspection-manufacturing-process-2-150x150.jpg" alt=""></swiper-slide>
-<swiper-slide><img src="./img/Govt-inspection-manufacturing-process-3-150x150.jpg" alt=""></swiper-slide>
-<swiper-slide><img src="./img/Govt-inspection-manufacturing-process-2-150x150.jpg" alt=""></swiper-slide>
-</swiper-container>
+
+<!-- More About This Product -->
+<div class="flex">
+    <div>
+        <img loading="lazy" decoding="async" width="577" height="433" src="https://alifboiler.com/wp-content/uploads/2022/02/Alif-Horizontal-Gas-Boiler-T-Series.png" class="attachment-large size-large wp-image-562" alt="s`" srcset="https://alifboiler.com/wp-content/uploads/2022/02/Alif-Horizontal-Gas-Boiler-T-Series.png 577w, https://alifboiler.com/wp-content/uploads/2022/02/Alif-Horizontal-Gas-Boiler-T-Series-300x225.png 300w" sizes="(max-width: 577px) 100vw, 577px">
+    </div>
+    <div>  <button class=" bg-[#CA0101] text-center text-white text-[18px] font-semibold mx-20 md:mx-0 w-full sm:px-5 md:px-24 my-5 py-2">More About This Product</button></div>
 </div>
 
-
-
-<h1 class="text-center text-[#D20009] font-semibold text-[32px] text-balance py-7 uppercase">Our Service </h1>
-<section
-  class="ezy__clients17 light  bg-[#E1E1E1] dark:bg-[#0b1727] text-zinc-900 dark:text-white"
->
-  <div class="container px-4">
-  
-    <div class="grid grid-cols-12 lg:gap-8">
-      <div class="col-span-12 sm:col-span-3 mt-8">
-        <div class="group text-center duration-300">
-          <div
-            class=" dark:bg-[#1E2735] px-3 py-2 "
-          >
-            <img
-              src="https://cdn.easyfrontend.com/pictures/logos/color-logo-3.png"
-              alt=""
-              class="max-h-[60px] mx-auto grayscale group-hover:grayscale-0 cursor-pointer"
-            />
-          </div>
-         <p class="text-[#010E4F] text-center font-semibold text-[22px] cursor-pointer text-balance py-2">Lorem ipsum dolor sit amet.</p>
-        </div>
-      </div>
-      <div class="col-span-12 sm:col-span-3 mt-8">
-        <div class="group text-center duration-300">
-          <div
-            class=" dark:bg-[#1E2735] px-3 py-2"
-          >
-            <img
-              src="https://cdn.easyfrontend.com/pictures/logos/color-logo-3.png"
-              alt=""
-              class="max-h-[60px] mx-auto grayscale group-hover:grayscale-0 cursor-pointer"
-            />
-          </div>
-         <p class="text-[#010E4F] text-center font-semibold text-[22px] cursor-pointer text-balance py-2">Lorem ipsum dolor sit amet.</p>
-        </div>
-      </div>
-      <div class="col-span-12 sm:col-span-3 mt-8">
-        <div class="group text-center duration-300">
-          <div
-            class=" dark:bg-[#1E2735] px-3 py-2 "
-          >
-            <img
-              src="https://cdn.easyfrontend.com/pictures/logos/color-logo-3.png"
-              alt=""
-              class="max-h-[60px] mx-auto grayscale group-hover:grayscale-0 cursor-pointer"
-            />
-          </div>
-         <p class="text-[#010E4F] text-center font-semibold text-[22px] cursor-pointer text-balance py-2">Lorem ipsum dolor sit amet.</p>
-        </div>
-      </div>
-      <div class="col-span-12 sm:col-span-3 mt-8">
-        <div class="group text-center duration-300">
-          <div
-            class=" dark:bg-[#1E2735] px-3 py-2 "
-          >
-            <img
-              src="https://cdn.easyfrontend.com/pictures/logos/color-logo-3.png"
-              alt=""
-              class="max-h-[60px] mx-auto grayscale group-hover:grayscale-0 cursor-pointer"
-            />
-          </div>
-         <p class="text-[#010E4F] text-center font-semibold text-[22px] cursor-pointer text-balance py-2">Lorem ipsum dolor sit amet.</p>
-        </div>
-      </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class=" md:ml-[20%] md:mr-[20%] lg:ml-[33%] lg:mr-[33%] border-4 rounded-md border-red-600 mt-10  md:mt-20 has_ma_el_bg_slider elementor-section elementor-top-section elementor-element  elementor-element-2ca9b14 elementor-section-boxed elementor-section-height-default elementor-section-height-default jltma-glass-effect-no wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no" data-id="2ca9b14" data-element_type="section" >
-  <div class="elementor-container elementor-column-gap-default">
-    <div class="has_ma_el_bg_slider elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6c73f02 jltma-glass-effect-no" data-id="6c73f02" data-element_type="column">
-      <div class="elementor-widget-wrap elementor-element-populated">
-        <div class="elementor-element elementor-element-c07d7b4 jltma-glass-effect-no elementor-widget elementor-widget-facebook-page" data-id="c07d7b4" data-element_type="widget" data-widget_type="facebook-page.default">
-          <div class="elementor-widget-container">
-            <style>/*! elementor-pro - v3.21.0 - 30-04-2024 */
-            .elementor-facebook-widget.fb_iframe_widget,.elementor-facebook-widget.fb_iframe_widget span{width:100%!important}.elementor-facebook-widget.fb_iframe_widget iframe{position:relative;width:100%!important}.elementor-facebook-widget.fb-like{height:1px}.elementor-widget-facebook-comments iframe{width:100%!important}</style><div class="elementor-facebook-widget fb-page fb_iframe_widget" data-href="https://www.facebook.com/alifboiler" data-tabs="timeline" data-height="650px" data-width="500px" data-small-header="false" data-hide-cover="false" data-show-facepile="true" data-hide-cta="false" style="min-height: 1px;height:650px" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=474&amp;height=650&amp;hide_cover=false&amp;hide_cta=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Falifboiler&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width=500px"><span style="vertical-align: bottom; width: 474px; height: 650px;"><iframe name="fb9bc58133b5997f9" height="650px" data-testid="fb:page Facebook Social Plugin" title="fb:page Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v2.10/plugins/page.php?app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Dfd656cbf8bb7e3889%26domain%3Dalifboiler.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Falifboiler.com%252Ff95dcba6e859009dc%26relation%3Dparent.parent&amp;container_width=474&amp;height=650&amp;hide_cover=false&amp;hide_cta=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Falifboiler&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width=500px" style="border: none; visibility: visible; width: 474px; height: 650px;" class=""></iframe></span></div>		</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<h1 class="text-center text-xl font-semibold text-gray-700 text-balance py-2">We Will Assist You 24/7</h1>
+<h1 class=" flex justify-center text-xl font-semibold text-gray-700 text-balance py-2">We Will Assist You 24/7</h1>
 <!-- Quick Contact section -->
 <div>
-  <h1 class="text-center font-semibold text-[32px] sm:text-[50px] text-balance text-black"> Quick Contact</h1>
+  <h1 class=" flex justify-center font-semibold text-[32px] sm:text-[50px] text-balance text-black"> Quick Contact</h1>
   <div class="flex flex-wrap gap-8 py-5 ml-12 sm:ml-44 lg:ml-20">
     <div>
-      <input type="text" class=" w-72 md:w-96 p-2 outline-none border-2 border-gray-400 text-lg " placeholder="Name">
+      <input type="text" class=" w-72 md:w-96 p-2 outline-none  border border-gray-400 text-lg " placeholder="Name">
     </div>
     <div>
-      <input type="email" class="w-72 md:w-96 p-2 outline-none border-2 border-gray-400 text-lg " placeholder="Email">
+      <input type="email" class="w-72 md:w-96 p-2 outline-none  border border-gray-400 text-lg " placeholder="Email">
     </div>
     <div>
-      <input type="number" class="w-72 md:w-96 p-2 outline-none border-2 border-gray-400 text-lg " placeholder="Phone">
+      <input type="number" class="w-72 md:w-96 p-2 outline-none  border border-gray-400 text-lg " placeholder="Phone">
     </div>
     <div>
-      <input type="text" class="w-72 md:w-96 p-2 outline-none border-2 border-gray-400 text-lg " placeholder="Company Name">
+      <input type="text" class="w-72 md:w-96 p-2 outline-none  border border-gray-400 text-lg " placeholder="Company Name">
     </div>
     <div>
-      <input type="text" class="w-72 md:w-96 p-2 outline-none border-2 border-gray-400 text-lg " placeholder="Designation ">
+      <input type="text" class="w-72 md:w-96 p-2 outline-none  border border-gray-400 text-lg " placeholder="Designation ">
     </div>
   </div>
   <div class="g-recaptcha ml-12 sm:ml-44 lg:ml-20" data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"></div>
   <div>
-    <input type="submit" value="Send" class=" ml-12 sm:ml-44 lg:ml-20 text-white font-semibold w-72 sm:w-96  outline-none border-2 bg-[#D20009] hover:bg-[#2C3494] py-2 my-3 text-lg " >
+    <input type="submit" value="Send" class=" ml-12 sm:ml-44 lg:ml-20 text-white font-semibold w-72 sm:w-96  outline-none  border bg-[#D20009] hover:bg-[#2C3494] py-2 my-3 text-lg " >
   </div>
 </div>
 <!-- About to footer -->
 <div class="bg-[#39395C]">
   <div>
     <div>
-      <h1 class="text-[32px] text-center font-semibold text-[#B1AEB1] p-10">About</h1>
-      <p class="text-center text-[20px] py-10 sm:py-20  px-5 sm:px-20 text-wrap text-white">Alif Boiler Is The Manufacturer Of All Kinds Of Industrial Boilers Like As Gas Boiler, Solid Fuel Boiler (Wood/Cloth Wastage/Coal/Charcoal), Electric Boilers. The Company Is Also Manufacturer Of Garments Finishing Items Like Machine, Water Softener, Energy-Saving Pre-Heater, Energy-Saving Economizer, Pre Water Condenser, CNG Solution System, Heavy Pressure Vessel, Etc. . Alif Boiler Company Ltd, A High-Tech Innovative Specialized Steam Boiler Manufacturing Company Of Bangladesh.</p>
+      <h1 class="text-[32px] flex justify-center font-semibold text-[#B1AEB1] p-10">About</h1>
+      <p class=" justify-center text-[20px] py-10 sm:py-20  px-5 sm:px-20 text-wrap text-white">Alif Boiler Is The Manufacturer Of All Kinds Of Industrial Boilers Like As Gas Boiler, Solid Fuel Boiler (Wood/Cloth Wastage/Coal/Charcoal), Electric Boilers. The Company Is Also Manufacturer Of Garments Finishing Items Like Machine, Water Softener, Energy-Saving Pre-Heater, Energy-Saving Economizer, Pre Water Condenser, CNG Solution System, Heavy Pressure Vessel, Etc. . Alif Boiler Company Ltd, A High-Tech Innovative Specialized Steam Boiler Manufacturing Company Of Bangladesh.</p>
     </div>
     <div class="flex justify-center gap-5">
       <i class="fa fa-facebook-f text-[26px] text-white cursor-pointer hover:text-yellow-600"></i>
@@ -961,7 +856,7 @@ navigation="true">
   </div>
   <footer class="text-gray-600 body-font ">
     <div class="container p py-24 mx-auto">
-      <div class="flex flex-wrap justify-center md:text-left text-center order-first ">
+      <div class="flex flex-wrap justify-center md:text-left  justify-center order-first ">
         <div class="lg:w-1/3 md:w-1/2 w-full px-4">
           <h2 class="title-font font-medium text-yellow-600 tracking-widest text-lg mb-3">Factory Address</h2>
           <nav class="list-none mb-10">
@@ -1019,7 +914,7 @@ navigation="true">
   <div class="flex justify-center mt-5 sm:mt-10">
     <hr class="w-[1200px] ">
   </div>
-  <p class="text-center text-balance text-[16px] py-5 text-white">Ⓒ 2023 - Alif Boiler All Rights Are Reserved</p>
+  <p class=" justify-center text-balance text-[16px] py-5 text-white">Ⓒ 2023 - Alif Boiler All Rights Are Reserved</p>
 </div>
   <script>
 //  Navbar items 
@@ -1242,7 +1137,6 @@ window.onload = function () {
 };
 
   </script>
-   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
    <script src='https://www.google.com/recaptcha/api.js'></script>
    <script>
